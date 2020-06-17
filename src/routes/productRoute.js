@@ -17,6 +17,7 @@ router.get('/products', (req, res) => {
   });
 });
 
+
 // Add Products
 router.post('/products', (req, res) => {
   const newProduce = {
@@ -34,7 +35,7 @@ router.post('/products', (req, res) => {
   });
 });
 
-// Retrieve details of a particular user
+// Retrieve details of a particular product
 router.get('/products/:id', (req, res) => {
   Produce.findById(req.params.id, (err, foundProduce) => {
     if (err) {

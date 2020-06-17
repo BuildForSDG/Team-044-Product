@@ -6,7 +6,8 @@ const dbConnect = () => {
     {
       useNewUrlParser: true,
       useUnifiedTopology: true,
-      useCreateIndex: true
+      useCreateIndex: true,
+      useFindAndModify: false,
     }
   )
     .then(() => {

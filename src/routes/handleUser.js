@@ -14,4 +14,16 @@ router.get('/allUsers/:id', (req, res) => {
   })
 })
 
+router.get('/allUsers', (req, res) => {
+  User.find({}, (err, totalUsers) => {
+    if(err) {
+      console.log(err);
+    } else {
+      res.json(totalUsers)
+    }
+  })
+})
+
+
 module.exports = router;
+

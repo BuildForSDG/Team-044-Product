@@ -9,7 +9,7 @@ const dbConnect = require('./dbConnect');
 const initializeSocketIo = require('./socket');
 const app = express();
 
-const routes = require('./routes');
+const productRoutes = require('./routes/productRoute');
 const userRoutes = require('./routes/user');
 const handleRoutes = require('./routes/handleUser')
 // Database connection
@@ -18,7 +18,7 @@ dbConnect();
 app.use(cors());
 app.use(bodyParser.json());
 // Routes
-app.use(routes);
+app.use(productRoutes);
 app.use(handleRoutes)
 app.use('/auth', userRoutes);
 

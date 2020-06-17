@@ -42,7 +42,8 @@
     "mongoose": "^5.9.16",
     "mongoose-unique-validator": "^2.0.3",
     "nodemon": "^2.0.4",
-    "socket.io": "^2.3.0"
+    "socket.io": "^2.3.0",
+    "chat-service": "1.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",

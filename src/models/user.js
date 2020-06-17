@@ -24,6 +24,27 @@ const userSchema = mongoose.Schema(
     password: {
       type: String,
       required: true
+    },
+    image: {
+      type: String,
+    },
+    gender: {
+      type: String
+    },
+    d_o_b: {
+      type: String
+    },
+    mobile_number: {
+      type: String
+    },
+    address: {
+      type: String
+    },
+    city: {
+      type: String
+    },
+    country: {
+      type: String
     }
   },
   { timestamps: true }
